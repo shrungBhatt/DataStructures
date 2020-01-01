@@ -1,15 +1,12 @@
-//
-//  main.cpp
-//  DataStructures
-//
-//  Created by Shrung Bhatt on 25/12/19.
-//  Copyright © 2019 Shrung Bhatt. All rights reserved.
-//
-
 #include <iostream>
+#include "binary_tree.hpp"
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    
+    int count[] = {8,3,10,1,6,9,14};
+    BinaryTree binaryTree;
+    binaryTree.setElements(count);
+    cout << binaryTree.doesTreeContainsElement(0,14,7) << endl;
     return 0;
 }
